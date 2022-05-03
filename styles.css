@@ -131,3 +131,5 @@ textarea {
 #button-send {
   box-shadow: 2px 2px 2px black;
 }
+@media screen and (min-width: 480px) and (max-width: 800px) {
+}
