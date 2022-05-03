@@ -83,6 +83,7 @@ ul.timeline > li:before {
 #projects {
   min-height: 100vh;
 }
+
 #testimonials {
   min-height: 100vh;
   background: linear-gradient(
@@ -113,10 +114,9 @@ ul.timeline > li:before {
 #testimonials.container {
   box-shadow: 4px 4px 4px black;
 }
-.project-images {
+#project-image {
   width: 300px;
   height: auto;
-  box-shadow: 3px 3px 3px black;
 }
 #contact {
   min-height: 100vh;
@@ -128,8 +128,7 @@ input,
 textarea {
   box-shadow: 3px 3px 3px black;
 }
-#button-send {
+#button-send,
+#reset-button {
   box-shadow: 2px 2px 2px black;
-}
-@media screen and (min-width: 480px) and (max-width: 800px) {
 }
