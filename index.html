@@ -2,26 +2,39 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./styles.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link
+   
+
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio 3.0</title>
+
+        <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio 3.0</title>
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
   </head>
+  
   <body class="bg-dark">
 
     <!-- LANDING -->
     <section id="landing">
-      <h1 class="font-monospace fs-1">I am Ricardo Moses</h1>
-      <h2  class="font-monospace fs-2">Web Developer</h2>
-      <a href="#about" class="btn-get-started scrollto">    <i class="fa-solid fa-computer-mouse-scrollwheel"></i></a>
+      <h1 id="landing-text" class=" fw-bold fs-1">I am Ricardo Moses</h1>
+      <h2  id="landing-text"  class=" fw-bold fs-2">Web Developer</h2>
+      
+      <div class="container d-flex align-items-center justify-content-center ">
+ 
+
+<a href="#about" class="btn-get-started scrollto"> <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-down-circle-fill text-dark " viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+</svg></a>
+
+</div>
     </section>
 
     <!-- NAVBAR -->
@@ -62,9 +75,9 @@
     </nav>
 
     <!-- ABOUT -->
-     <section id="about" class="container bg-secondary  mt-3 p-5 shadow-md" data-aos="fade-right">
+     <section id="about" class="container bg-secondary  mt-3 p-5 shadow-md">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6"   data-aos="fade-right">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-6">
@@ -135,7 +148,7 @@
             </div>
           </div>
         </div>
-        <div  class="col-md-6">
+        <div  class="col-md-6"  data-aos="fade-left">
           <h2>About Me</h2>
           <p class="lead">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
@@ -163,7 +176,7 @@
     </section>
 
 <!-- RESUME -->
-    <section id="resume"  class="container bg-secondary mt-3 p-5"  data-aos="fade-left">
+    <section id="resume"  class="container bg-secondary mt-3 p-5"  >
       <div class="container">
         <div class="section-title">
           <h2 class="d-flex justify-content-center">Resume</h2>
@@ -220,12 +233,40 @@
 </section>
 
 <!-- PROJECTS -->
-    <section id="projects"  class="container bg-secondary mt-3 p-5"  data-aos="fade-right" >
-      <h2 class="text-center">Projects</h2>
+    <section id="projects"  class="container bg-secondary mt-3 p-5"  >
+      <h2 class="text-center pb-5">Projects</h2>
+<div class="about-container d-flex justify-content-around">
+
+        <div id="project-card" class="card" style="width: 18rem;">
+  <img src="./images/calc.PNG" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Calculator</h5>
+    <p class="card-text">Project made using flexbox.</p>
+  </div>
+  <div class="card-body">
+    <a href="https://coruscating-pudding-6a9152.netlify.app/" class="card-link">Live</a>
+    <a href="https://github.com/RicardoRonan/calc" class="card-link">Github</a>
+  </div>
+</div>
+
+
+    <div  id="project-card" class="card" style="width: 18rem;">
+  <img src="./images/holiday.PNG" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Holiday Destination</h5>
+    <p class="card-text">Project created using html.</p>
+  </div>
+  <div class="card-body">
+    <a href="https://deluxe-bunny-ee073b.netlify.app/" class="card-link">Live</a>
+    <a href="https://github.com/RicardoRonan/main" class="card-link">Github</a>
+  </div>
+</div>
+</div>
+
     </section>
 
     <!-- TESTIMONIALS -->
-    <section id="testimonials"  class="container bg-secondary  mt-3 p-5"  data-aos="fade-left">
+    <section id="testimonials"  class="container bg-secondary  mt-3 p-5">
       <h2 class="text-center">Testimonials</h2>
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -287,16 +328,12 @@
     </section>
 
 <!-- CONTACT -->
-    <section id="contact" class="container bg-secondary mt-3 p-5"  data-aos="fade-right">
-      <h1 class="text-center">Contact</h1>  
+    <section id="contact" class="container bg-secondary mt-3 p-5">
+      <h1 class="text-center pb-5">Contact</h1>  
 <form
   action="https://formspree.io/f/xnqwogak"
   method="POST"
 >
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label" name="email">Email address</label>
-  <input required type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
-</div>
 <div class="row g-3">
   <div class="col">
     <input type="text"
@@ -307,35 +344,65 @@
   </div>
  </div>  
 <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label" name="email">Email address</label>
+  <input required type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
+</div>
+
+<div class="mb-3">
   <label for="Textarea1" class="form-label" name="message">Message</label>
   <textarea required class="form-control" id="Textarea1" rows="3" name="message" placeholder="Your message here..."></textarea>
 </div>
 
-  <button type="submit" class="btn btn-primary ">Send</button>
+  <button type="submit" class="btn btn-primary d-none ">Send</button>
+  <!-- Button trigger modal -->
+  <div class="container d-flex justify-content-between">
+    <button id="button-send" type="button" class="btn-lg btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Send
+</button>
+<input id="reset-button" class="btn-lg btn-primary " type="reset" value="Reset" />
+  </div>
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div id="modal-dialog" class="modal-dialog">
+    <div id="modal-content" class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title  text-light" id="exampleModalLabel ">Confirm Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div id="modal-body" class="modal-body text-light">
+      Please check if details entered below are correct.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary  text-light" >Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 </form>
     </section>
-  </body>
   <div class="container" >
       <footer class="border-top py-3 my-4" >
+        <div class="container d-flex justify-content-center"">
         <div class="col-md-4 d-flex align-items-center">  
           <span class="text-muted">© 2022 Fasp, Inc</span>
         </div>
         <div class="col-md-4 d-flex ">
            <span class="text-muted">Created by Ricardo Moses</span>
         </div>
-        
+        </div>
       </footer>
   </div>
-<script src="https://kit.fontawesome.com/53a149f81a.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
   AOS.init();
-</script>
-  <script src="https://kit.fontawesome.com/53a149f81a.js" crossorigin="anonymous"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>
+</script> 
+  </body> 
+
 </html>

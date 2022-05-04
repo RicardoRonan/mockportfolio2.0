@@ -43,6 +43,9 @@ section#landing {
   background-size: cover;
   min-height: 75vh;
 }
+#landing-text {
+  font-family: sans-serif;
+}
 .img-fluid .about-img {
   height: 300px;
   width: 300px;
@@ -131,4 +134,7 @@ textarea {
 #button-send,
 #reset-button {
   box-shadow: 2px 2px 2px black;
+}
+#project-card {
+  box-shadow: 3px 3px 3px black;
 }
